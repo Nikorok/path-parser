@@ -50,7 +50,7 @@ const compare = (pattern, uri) => {
     return pattern.pattern.test(pathname);
 };
 
-function scan(pattern, uri) {
+function getParams(pattern, uri) {
     if (pattern === null) throw new Error("Pattern must be an object");
 
     const pathname = url.parse(uri, true).pathname;
@@ -95,5 +95,5 @@ module.exports = {
     compile,
     compare,
     insert,
-    scan
+    getParams
 };

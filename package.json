@@ -1,0 +1,26 @@
+{
+  "name": "simple-path-parser",
+  "version": "0.0.2",
+  "description": "Lib for parse url",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./test/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikorok/path-parser.git"
+  },
+  "keywords": [
+    "lib",
+    "paht-parser"
+  ],
+  "author": "Nikita Shamberger <shambergernikita@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nikorok/path-parser/issues"
+  },
+  "homepage": "https://github.com/Nikorok/path-parser#readme"
+}

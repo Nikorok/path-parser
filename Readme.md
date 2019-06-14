@@ -53,16 +53,16 @@ const pathParser = require('path-parser');
         // /user/John/321/{post:any}, parameter "post" doesn't fill with value because 
         // it has type any, but in parameters it has type string
      ```
-- `scan(pattern, uri)`
+- `getParams(pattern, uri)`
    * pattern: Object
    * return: `null` || `parameters`
    * ```javascript
-        console.log(pathParser.scan(pattern, '/user/Nikita/123/My-post123/'));
+        console.log(pathParser.getParams(pattern, '/user/Nikita/123/My-post123/'));
         // {name: "Nikita", id: "123", post: "My-post123"}
    
-        console.log(pathParser.scan(pattern, '/user/Nikita/123/'));
+        console.log(pathParser.getParams(pattern, '/user/Nikita/123/'));
         // null
    
-        console.log(pathParser.scan(pattern, '/user/Nikita/String/My-post123/'));
+        console.log(pathParser.getParams(pattern, '/user/Nikita/String/My-post123/'));
         // null
      ```

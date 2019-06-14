@@ -7,7 +7,7 @@ const server = http.createServer((req, res) =>{
     for(const route of routes) {
         if(pathParser.compare(route.pattern, req.url)){
 
-            req.params = pathParser.scan(route.pattern, req.url);
+            req.params = pathParser.getParams(route.pattern, req.url);
             route.handler(req, res);
         }
     }

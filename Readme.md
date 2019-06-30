@@ -1,4 +1,4 @@
-#  Path-Parser
+#  Simple-Path-Parser
 Simple lib for parse url
 ## Installation
 ```
